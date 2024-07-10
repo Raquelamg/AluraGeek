@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <section>
+        <header class="cabecera">
+            <div>
+                <img class="banner" src="./banner.png">
+            </div>
+           
+        </header>
+    </section>
+    
+    <div id="container" class="productos">
+        <h1 class="titulo">MIS PRODUCTOS</h1>
+        <section id="card" class="card">
+
+            <img class="imagenProducto" src="stormtroper.jfif" width="320" height="240">
+            <p1 class="nombreProducto">Stormtroper</p1>
+            <p2 class="precioProducto">$60,00 <img class="eliminar" onclick="eliminarCard()" src="./Vector.png"/></p2> 
+        </section>
+        <section class="card">
+
+            <img class="imagenProducto" src="gameboy.png" width="320" height="240">
+            <p1 class="nombreProducto">Gameboy</p1>
+            <p2 class="precioProducto">$60,00 <img class="eliminar" onclick="eliminarCard()" src="./Vector.png"/></p2>
+
+        </section>
+        <section class="card">
+
+            <img class="imagenProducto" src="stormtroper.jfif" width="320" height="240">
+            <p1 class="nombreProducto">Stormtroper</p1>
+            <p2 class="precioProducto">$60,00 <img class="eliminar" src="./Vector.png" onclick="eliminarCard()"/></p2> 
+            
+
+        </section>
+        <section class="card">
+
+            <img class="imagenProducto" src="gameboy.png" width="320" height="240">
+            <p1 class="nombreProducto">Gameboy</p1>
+            <p2 class="precioProducto">$60,00 <img class="eliminar" onclick="eliminarCard()" src="./Vector.png"/></p2>
+
+
+        </section>
+        
+
+
+
+
+
+    </div>
+
+    <div   class="formularioProductos">
+        
+
+      <h2 class="titulo">AGREGAR PRODUCTO:</h2>
+
+        <input class="celda" name="nombre" id="nombre" type="text" placeholder="nombre..."  required>
+       
+
+        
+            <input class="celda" name="precio" id="precio" type="text" placeholder="precio..." required>
+           
+
+
+            
+            <input class="celda" name="imagen" id="imagen" type="text" placeholder="imagen..." required>
+        
+            <button class="boton" onclick="addDiv()">Enviar</button>
+            <button class="boton" onclick="limpiarCaja()">Limpiar</button>
+       
+        </div>
+ 
+      
+</body>
+<footer class="pieDePagina">
+    <section>
+    <img class="banner" src="banner.png" />
+    <p1 class="miNombre">Desarrollado por Raquel Moreno</p1>
+    <p2 class="alura">ALURA LATAM 2024</p2>
+    </section>
+
+
+</footer>       <script src="Producto.js"></script>
+</html>
